@@ -1,0 +1,24 @@
+{
+  "name": "8rinks-fields-json",
+  "version": "1.0.0",
+  "description": "A lambda function that converts the 8rinks field schedule page (HTML) into JSON.",
+  "main": "app.js",
+  "scripts": {
+    "test": "claudia test-lambda",
+    "deploy": "claudia update --version dev",
+    "release": "claudia set-version --version production",
+    "start": "ntl"
+  },
+  "author": "Kaz Walker",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "claudia": "^2.14.2"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "claudia-api-builder": "^2.5.1",
+    "moment": "^2.19.1",
+    "moment-timezone": "^0.5.13",
+    "node-fetch": "^1.7.3"
+  }
+}
